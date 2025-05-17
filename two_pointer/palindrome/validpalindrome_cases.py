@@ -14,7 +14,7 @@ test_cases = [
     ("Noon", True),
 
     # Palindromic phrases with spaces and punctuation
-    ("A man, a plan, a canal: Panama", True),
+    ("A man, a plan, a canal:?><><>< Panama", True),
     ("Was it a car or a cat I saw?", True),
     ("No 'x' in Nixon", True),
     ("Eva, can I see bees in a cave?", True),
