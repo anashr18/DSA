@@ -1,1 +1,46 @@
 
+Here’s a draft email you can send to initiate a focused discussion around those three areas:
+
+⸻
+
+Subject: Proposal: Kernel-Level Optimization and Quantization Strategy Discussion
+
+Hi [Recipient’s Name/team],
+
+Hope you’re doing well.
+
+I wanted to initiate a structured discussion and follow-up actions around three key focus areas that could significantly benefit our current and future deployments:
+
+⸻
+
+1. Kernel-Level Optimization for Core Operations
+We’re exploring the scope of low-level kernel fusion and custom CUDA/Triton implementations to improve performance at the operator level. The idea is to benchmark and identify latency bottlenecks in common operations (e.g., matmul, attention, softmax) and explore opportunities to rewrite or fuse them for edge efficiency.
+
+⸻
+
+2. Quantization Strategies and Whitepaper Drafting
+We propose creating an internal PoV/whitepaper comparing state-of-the-art quantization methods including:
+	•	AWQ (Activation-aware Weight Quantization)
+	•	AutoRound
+	•	Marlin
+	•	And other methods like GPTQ, RPTQ, SmoothQuant, ZeroQuant, etc.
+
+The goal would be to evaluate their strengths, trade-offs (accuracy vs. performance), hardware alignment, and implementation complexity, especially in the context of deploying LLMs and DLMs on mobile/edge.
+
+⸻
+
+3. Applicability of Kernel Optimizations to Existing Projects
+We should also assess how kernel-level optimizations can be retrofitted or incrementally applied to our ongoing or legacy projects. This includes evaluating feasibility, model export formats (e.g., ONNX), compatibility with inference frameworks (e.g., TensorRT, vLLM), and the cost-benefit analysis of integrating fused operations.
+
+⸻
+
+Happy to schedule a sync or breakout session for deeper discussion. Let me know your thoughts, and I can prepare a more detailed agenda or draft for the quantization whitepaper.
+
+Best regards,
+[Your Name]
+Samsung R&D
+[Optional: contact info]
+
+⸻
+
+Would you like a shorter or more technical version depending on your audience (e.g., engineers vs. leadership)?
